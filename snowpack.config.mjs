@@ -1,26 +1,20 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 export default {
   mount: {
-    /* ... */
   },
   plugins: [
-    /* ... */
   ],
   routes: [
-    /* Enable an SPA Fallback in development: */
-    // {"match": "routes", "src": ".*", "dest": "/index.html"},
+    { "src": ".*", "dest": "client/index.html" },
   ],
   optimize: {
-    /* Example: Bundle your final build: */
-    // "bundle": true,
+    "bundle": true
   },
   packageOptions: {
-    /* ... */
   },
   devOptions: {
-    /* ... */
   },
   buildOptions: {
-    /* ... */
+    out: 'build'
   },
 };
