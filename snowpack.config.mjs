@@ -8,7 +8,13 @@ export default {
     "@snowpack/plugin-react-refresh",
   ],
   optimize: {
-    "bundle": true
+    "bundle": true,
+    'minify': true,
+    'target': 'es2020',
+  },
+  devOptions: {
+    'port': 3000,
+    'open': 'none', 
   },
   buildOptions: {
     out: 'build'

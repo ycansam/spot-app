@@ -1,7 +1,7 @@
 {
   "scripts": {
     "name": "spot-app",
-    "version": "0.0.0",
+       "version": "0.0.0",
     "main": "index.js",
     "description": "Launcher for torrent games",
     "test": "echo \"This template does not include a test runner by default.\" && exit 1",
@@ -17,8 +17,7 @@
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
-    "electron": "^27.0.4",
-    "electron-is-dev": "^2.0.0",
+   "electron-is-dev": "^2.0.0",
     "semantic-release": "^22.0.7",
     "snowpack": "^3.3.7"
   }
