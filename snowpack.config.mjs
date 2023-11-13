@@ -1,18 +1,20 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 export default {
   mount: {
+    public: '/',
+    src: '/dist',
   },
   plugins: [
-  ],
-  routes: [
-    { "src": ".*", "dest": "client/index.html" },
+    "@snowpack/plugin-react-refresh",
   ],
   optimize: {
-    "bundle": true
-  },
-  packageOptions: {
+    "bundle": true,
+    'minify': true,
+    'target': 'es2020',
   },
   devOptions: {
+    'port': 3000,
+    'open': 'none', 
   },
   buildOptions: {
     out: 'build'
