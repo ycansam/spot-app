@@ -1,18 +1,14 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 export default {
   mount: {
+    public: '/',
+    src: '/dist',
   },
   plugins: [
-  ],
-  routes: [
-    { "src": ".*", "dest": "client/index.html" },
+    "@snowpack/plugin-react-refresh",
   ],
   optimize: {
     "bundle": true
-  },
-  packageOptions: {
-  },
-  devOptions: {
   },
   buildOptions: {
     out: 'build'

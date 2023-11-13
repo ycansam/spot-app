@@ -7,7 +7,7 @@
     "test": "echo \"This template does not include a test runner by default.\" && exit 1",
     "start:electron": "electron index.js",
     "start:snowpack": "snowpack dev",
-    "start": "concurrently \"npm:start:electron\"",
+    "start": "concurrently \"npm:start:snowpack\" \"npm:start:electron\"",
     "build:snowpack": "snowpack build",
     "build:electron": "electron index.js",
     "build": "npm run build:snowpack && npm run build:electron"
